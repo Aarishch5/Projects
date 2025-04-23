@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Gilroy';
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(175, 176, 167);
+}
+
+#nav{
+    height: 80px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 0 30px;
+}
+
+#nav h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#nav i{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 50%;
+}
+
+#center{
+    /* height: 40%; height nhi de rhe hai fir ye apne child k hisaab se height le lega matlab font / text k hisaab se*/     
+    width: 100%;
+    /* background-color: brown;  */
+    padding: 40px 40px;
+}
+
+#center h1{
+    font-size: 4.1vw;
+    font-weight: 500;
+    line-height: 1;
+}
+
+#center-in{
+    height: 180px;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#center-in p{
+    font-size: 1.4vw;
+    font-weight: 600;
+    line-height: 20px;
+    /* padding: 30px; */
+    line-height: 1.9vw;
+}
+#right{
+    width: 20%;
+}
+
+.elem{
+    /* background-color: yellow; */
+    margin: 5px;
+    padding: 15px 0;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.elem i{
+    font-size: 25px;
+    font-weight: 500;
+    opacity: 0;
+}
+
+.elem a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px
+}
+
+.elem:hover i{
+    opacity: 1;
+}
+
+.elem:hover{
+    background-color: rgb(195, 182, 182);
+
+}
+
+#bottom{
+    width: 100%;
+    height: 33.5%;
+    /* background-color: brown; */
+    background-image: url(freestocks-_3Q3tsJ01nc-unsplash.jpg);
+    background-size: cover;
+    background-position: 0 30%;
+}
+
+
+@media (max-width:600px) {
+    
+    #nav{
+        height: 60px;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    #nav h4{
+        font-size: 15px;
+        font-weight: 600;
+        display: none; /*  gayab ho jaayenge */
+    }
+    
+    #nav i{
+        background-color: black;
+        color: rgb(255, 255, 255);
+        font-size: 12px;
+        padding: 7px;
+        font-weight: 500;
+        border-radius: 50%;
+    }
+
+    #center{
+        /* height: 40%; height nhi de rhe hai fir ye apne child k hisaab se height le lega matlab font / text k hisaab se*/     
+        width: 100%;
+        /* background-color: brown;  */
+        padding: 20px 20px;
+    }
+    
+    #center h1{
+        font-size: 11vw;
+        font-weight: 500;
+        line-height: 13vw;
+    }
+    
+    #center-in{
+        height: 180px;
+        width: 100%;
+        /* background-color: red; */
+        margin-top: 24px;
+        display: flex;
+        line-height: 20px;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    
+    #center-in p{
+        font-size: 3.3vw;
+        font-weight: 600;
+        gap: 20px;
+        line-height: 4.9vw;
+    }
+    #right{
+        width: 100%;
+    }
+    
+    .elem{
+        /* background-color: yellow; */
+        margin: 5px;
+        padding: 10px 0;
+        border-top: 1.5px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .elem i{
+        font-size: 18px;
+        font-weight: 500;
+        opacity: 1;
+    }
+    
+    .elem a{
+        color: black;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px
+    }
+    
+    .elem:hover{
+        background-color: rgb(195, 182, 182);
+    
+    }
+
+    #bottom{
+        width: 100%;
+        height: 33.5%;
+        /* background-color: brown; */
+        background-image: url(freestocks-_3Q3tsJ01nc-unsplash.jpg);
+        background-size: cover;
+        background-position: 0 25%;
+    }
+    
+}
